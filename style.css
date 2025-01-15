@@ -8,6 +8,7 @@ html {
     display:grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
+    font-family: "Poppins", serif;
 }
 .sidebar{
     background-color: navy;
@@ -15,18 +16,81 @@ html {
     grid-row:1/3;
     font-family: "Poppins", serif;
     color: white;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+.sidebar img{
+    width:50px;
+    height:50px;
+}
+.sideHeader{
+    display:grid;
+    font-size: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.sideHeader img{
+    width:75px;
+    height:75px;
+}
+.tabs div, .extras div{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .main{
     background-color: grey;
-    grid-column:2/3
+    grid-column:2/3;
+    grid-row: 2/3;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+.projects{
+    grid-column:1/2;
+    grid-row:1/3;
+    display: grid;
+}
+.announcements{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.trending{
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 .header{
     background-color: white;
     grid-column: 2/3;
     
 }
+.card{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+  
+}
+.cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+.players{
+    background-color: white;
+    border-radius: 10px;
+}
+.announcementCards{
+    background-color: white;
+    border-radius: 10px;
+    display:grid;
+}
 
 
+
+
+
+
+
+
+/*Font Family*/
 .poppins-thin {
     font-family: "Poppins", serif;
     font-weight: 100;
