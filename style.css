@@ -6,11 +6,14 @@ html {
   padding: 0;
 }
 .container{
-    height: 100%;
+    width:100%;
+    height:100%;
+
     display:grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     font-family: "Poppins", serif;
+
 }
 
 /*Header*/
@@ -19,9 +22,11 @@ html {
     background-color: #a5b7c1;
     grid-column: 2/3;
     display:grid;
-    padding:10px 50px 10px 50px;
+    padding:5px 50px 10px 50px;
     color:#0D1B1E;
     font-size: 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 .headerTop{
     display:flex;
@@ -125,15 +130,20 @@ html {
 .main{
     background-color: #7798AB;
     color:#0D1B1E;
+    font-size: 18px;
+
     grid-column:2/3;
     grid-row: 2/3;
     display:grid;
-    grid-template-columns: 2fr 1fr;
+
     
+}
+.projectsHeader, .announcementsHeader, .trendingHeader{
+    font-weight: bolder;
 }
 .projects{
     grid-column:1/2;
-    grid-row:1/3;
+    grid-row: span 2;
     padding:10px;
 }
 .announcements{
@@ -149,21 +159,27 @@ html {
 .card{
     background-color: white;
     padding: 10px;
+    height:225px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
   
 }
 .cards{
+    height:100%;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10;
     gap:20px;
 }
 .players{
     background-color: white;
     border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 .announcementCards{
     background-color: white;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     display:grid;
 }
